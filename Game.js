@@ -18,11 +18,13 @@ function rock(){
     else if(randomMove == 1){
         result.style.color ="#C50000"
         result.innerHTML = "You Lose!"
+        document.getElementById('lose').play()
         ComputerScore++
         document.getElementById('comp').innerHTML =" Computer : "+ ComputerScore
     }
 
     else{
+        document.getElementById('win').play()
         result.style.color ="#00C353"
         result.innerHTML = "You Win!"
         YourScore++
@@ -38,6 +40,7 @@ function paper(){
     // Game Logic
 
     if(randomMove == 0){
+        document.getElementById('win').play()
         result.style.color ="#00C353"
         result.innerHTML = "You Win!"
         YourScore++
@@ -52,6 +55,7 @@ function paper(){
     else{
         result.style.color ="#C50000"
         result.innerHTML = "You Lose!"
+        document.getElementById('lose').play()
         ComputerScore++
         document.getElementById('comp').innerHTML =" Computer : "+ ComputerScore
     }
@@ -67,11 +71,13 @@ function scissor(){
     if(randomMove == 0){
         result.style.color ="#C50000"
         result.innerHTML = "You Lose!"
+        document.getElementById('lose').play()
         ComputerScore++
         document.getElementById('comp').innerHTML =" Computer : "+ ComputerScore
     }
 
     else if(randomMove == 1){
+        document.getElementById('win').play()
         result.style.color ="#00C353"
         result.innerHTML = "You Win!"
         YourScore++
