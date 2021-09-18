@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+
+    <!----- Preloader ----->
+
+    <section id="loader">
+        <div class="one"></div>
+    </section>
+
+    <!----- GAME HEADLINE ----->
+    <h1 class="headline">Rock Paper Scissor Game</h1>
+
+    <!----- GAME SCORES ----->
+    <div class="scores">
+        <span id="You">You : 0</span>
+        <span id="comp">Computer : 0</span>
+    </div>
+
+
+    <!----- GAME PLAYERS ----->
+    <div class="players">
+        <div class="you">
+            <img src="rock.svg" id="you">
+        </div>
+        <h1 class="vs">VS</h1>
+        <div class="computer">
+            <img src="rock.svg" id="computer">
+        </div>
+    </div>
+
+    <div class="result">
+        <h1 id="result">Result</h1>
+    </div>
+
+    <!----- GAME MOVES ----->
+    <div class="moves">
+        <img src="rock_move.svg" id="rock" onclick="rock()">
+        <img src="paper_move.svg" id="paper" onclick="paper()">
+        <img src="scissor_move.svg" id="rock" onclick="scissor()">
+    </div>
+
+    <span class="choose">Choose Your Move</span>
+
+
+    <!----- JavaScript ----->
+    <script src="Game.js"></script>
+</body>
+</html>
